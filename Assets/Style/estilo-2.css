@@ -9,18 +9,19 @@
  font-family: "Poppins", sans-serif;
 }
 
+
+:root{
+    --bgc:#222327
+}
 body{
+    
+}
+
+#secI{
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
     background-color: var(--bgc) ;
-    background-image: url('other.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-:root{
-    --bgc:#222327
 }
 
 .main{
@@ -172,50 +173,31 @@ body{
     transform: translateX(calc(70px * 4));
 }
 
-.info{
-    display: flex;
-    height: 80vh;
-    width: 100vw;
+
+.bodyI{
+    color:#fff;
+    display:none;
     justify-content: center;
-    align-items: center;
-    /*background-color: black;*/
+    width: 100vw;
+    min-height: 80vh;
+    background-color: var(--bgc) ;
+    background-image: url('../Images/other.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
-.info > article{
-    background-color: #ffffffc5;
-    width: 60%;
-    padding: 1.5em;
-    border-radius: 1em;
-    
+.bodyII{
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 80vh;
+    background-color: var(--bgc) ;
+    background-image: url('../Images/bb.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
-.info > article > h4{
-    color: red;
-    margin-bottom: 1em;
-    text-align: center;
-}
-.info > article > p{
-    margin: 1em;
-    font-size: .8em;
-}
-
-.info > article > div{
-    display: flex;
-}
-
-.info > article > div > span.contact{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-}
-
-.info > article a{
-    font-size: .8em;
-    color:blue;
-}
-
 
 @media (max-width: 768px){
     .nav > div{
