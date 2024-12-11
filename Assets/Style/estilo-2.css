@@ -199,6 +199,35 @@ body{
     background-position: center;
 }
 
+
+.bodyII > .inicial-picture{
+    min-height: 75vh;
+    display: flex;
+    gap:2em;
+    justify-content: center;
+    align-items: center;
+    height: 12em;
+}
+
+.bodyII > .inicial-picture > .pict{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    background-color: #fff;
+    border-radius: 50%;
+    border:3px solid #00694a;
+}
+
+.bodyII > .inicial-picture > .pict > img{
+  width: 100%;
+  transition:.6s;
+}
+
+.bodyII > .inicial-picture > .pict > img:hover{
+    transform: scale(1.03);
+}
+
 @media (max-width: 768px){
     .nav > div{
         display: none;
