@@ -176,7 +176,7 @@ body{
 
 .bodyI{
     color:#fff;
-    display:none;
+    display:flex;
     justify-content: center;
     width: 100vw;
     min-height: 80vh;
@@ -187,26 +187,28 @@ body{
     background-position: center;
 }
 .bodyII{
+    position: relative;
     color:#fff;
-    display:flex;
+    display:none;
     justify-content: center;
     width: 100vw;
     min-height: 80vh;
     background-color: var(--bgc) ;
-    background-image: url('../Images/bb.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 1;
 }
 
 
 .bodyII > .inicial-picture{
-    min-height: 75vh;
+    min-height: 80vh;
     display: flex;
     gap:2em;
     justify-content: center;
     align-items: center;
     height: 12em;
+    background-color: #000000ce;
 }
 
 .bodyII > .inicial-picture > .pict{
@@ -219,6 +221,24 @@ body{
     border:3px solid #00694a;
 }
 
+.picture1::before{
+    position: absolute;
+    content: "";
+    left: 1em;
+    border: 3px solid #00694a;
+    width: calc(22.3% + 20px);
+    height: 3px;
+}
+
+.picture3::after{
+    position: absolute;
+    content: "";
+    right: 1em;
+    border: 3px solid #00694a;
+    width: calc(22.3% + 20px);
+    height: 3px;
+}
+
 .bodyII > .inicial-picture > .pict > img{
   width: 100%;
   transition:.6s;
@@ -228,14 +248,27 @@ body{
     transform: scale(1.03);
 }
 
+.video-bg {
+    position: fixed;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Ajusta o vídeo para cobrir o fundo */
+    z-index: -1; /* Coloca o vídeo atrás de outros elementos */
+}
+
+.bodyII .slogan{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyII .slogan img{
+   width: 70%;
+}
+
 @media (max-width: 768px){
-    .nav > div{
-        display: none;
-    }
-    .info > article{
-        background-color: #ffffffc5;
-        width: 95%;
-        padding: 1.5em;
-        border-radius: 1em;
-    }
+    
 }
