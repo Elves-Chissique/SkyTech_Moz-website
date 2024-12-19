@@ -14,7 +14,9 @@
     --bgc:#222327
 }
 body{
-    
+   overflow-x: hidden; 
+   display: flex;
+   justify-content: center;
 }
 
 #secI{
@@ -31,10 +33,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 1000;
 }
 
 .nav{
-    position: relative;
+    position: fixed;
     width: 98%;
     height: 70px;
     background-color: #00694a;
@@ -173,19 +177,153 @@ body{
     transform: translateX(calc(70px * 4));
 }
 
-
 .bodyI{
+    display: block;
+    background-color: #fff;
+}
+
+.main-bodyI{
     color:#fff;
     display:flex;
     justify-content: center;
     width: 100vw;
-    min-height: 80vh;
+    min-height: 100vh;
     background-color: var(--bgc) ;
     background-image: url('../Images/other.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+/*---------------------------------*/
+
+.percentegem-aceitacao{
+    position: absolute;
+    bottom: 1em;
+    background-color:rgb(0, 30, 41,.5);
+    width: 97.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    border-radius: 1em;
+}
+
+.div-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ring-bg {
+    fill: none;        /*Elemento comum para todos os Rings*/
+    stroke: #fff;
+}
+
+.ring-progress, .ring-progress-50, .ring-progress-88{
+  
+}
+
+
+
+.progress-ring {
+    transform: rotate(0deg); /* Começa o círculo no topo */
+  }
+  
+  
+  .ring-progress {
+    fill: none;
+    stroke-linecap: round; /* Bordas arredondadas */
+    stroke-dasharray: 314; /* Circunferência do círculo */
+    stroke-dashoffset: 78; /* Progresso */
+    stroke: #3c6900;
+    transition: stroke-dashoffset 0.5s ease;
+  }
+
+  /*Segundo Ring*/
+  .progress-ring-50 {
+    transform: rotate(0deg); /* Começa o círculo no topo */
+  }
+  
+  
+  .ring-progress-50 {
+    fill: none;
+    stroke-linecap: round; /* Bordas arredondadas */
+    stroke-dasharray: 314; /* Circunferência do círculo */
+    stroke-dashoffset: 157; /* Progresso */
+    stroke: #696200;
+    transition: stroke-dashoffset 0.5s ease;
+  }
+
+  /*Terceiro Ring*/
+  .progress-ring-88 {
+    transform: rotate(0deg); /* Começa o círculo no topo */
+  }
+  
+  
+  .ring-progress-88 {
+    fill: none;
+    stroke-linecap: round; /* Bordas arredondadas */
+    stroke-dasharray: 314; /* Circunferência do círculo */
+    stroke-dashoffset: 40; /* Progresso */
+    stroke: #a30461;
+    transition: stroke-dashoffset 0.5s ease;
+  }
+  
+ 
+
+/*----Configuração de Article de Serviços---------*/
+.Descr{
+    width: 100vw;
+    padding: 2em;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.second-article{
+    width: 100vw;
+    padding: 2em;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #835021;
+}
+
+.Descr > .second-article > .div-graphic-video{ 
+    width: 40%;
+    background-color: #ffffff56;
+    box-shadow: 0px 0px 8px;
+    border-radius: .4em;
+}
+
+.Descr > .second-article > .div-graphic-video img{ 
+    width: 100%;
+}
+
+.div-graphic-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 0px 0px 1px #000;
+}
+
+.div-graphic-text > p{
+    font-size: 1.8em;
+    margin-top: em;
+}
+
+.graphic-video{
+    width: 100%;
+}
+
+
+
+/*-------------começando configuração de BodyII or Area Comercial-----------------*/
 .bodyII{
     position: relative;
     color:#fff;

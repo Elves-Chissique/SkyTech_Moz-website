@@ -24,7 +24,7 @@ comercio.addEventListener('click', chamarComercio)
 
 function chamarHome(){
    bodyII.style.display = 'none'
-   bodyI.style.display = 'flex'
+   bodyI.style.display = 'block'
 }
 function chamarComercio(){
    bodyII.style.display = 'flex'
