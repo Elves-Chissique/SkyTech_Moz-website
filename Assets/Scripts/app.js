@@ -60,6 +60,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+
 // Configurando BodyII o play rate do video de background 
 var videoBg = window.document.querySelector('.video-bg')
 
