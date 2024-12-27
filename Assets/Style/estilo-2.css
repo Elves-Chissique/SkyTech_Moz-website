@@ -366,13 +366,11 @@ body{
 
 .servicos > div{
     padding: 1.5em;
-    box-shadow: 0px 0px 4px #835021;
     transition: .6s;
     width: 25%;
     height: 50vh;
     display: flex;
     position: relative;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     cursor: default;
@@ -383,44 +381,79 @@ body{
 
 .servicos > div:hover{
     padding: 1.5em;
-    box-shadow: 0px 0px 8px #00694aaa;
+    box-shadow: 0px 0px 18px red;
+    
 }
+
+.servicos > div:hover .span-icon{
+    color: #87ac03;
+}
+
 
 .servicos > div > .span-title{
-    color:#835021;
-    margin-bottom: 1.5em;
+    color:#87ac03;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
     font-size: 1.4em;
-    
-    
 }
 
-#main-btn{
+.servicos > div > .span-text{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: .9em;
+}
+
+.servicos .main-btn{
     background-color:#ffffffd2;
     width: 100%;
     position: absolute;
-    margin-bottom: -14em;
+    bottom: 1em;
     padding: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
-#main-btn:hover{
-    box-shadow: 0px 0px 6px red;
-}
-
-.servicos > div > #main-btn > .span-btn{
-    color: brown;
-    border: 2px solid #835021;
-    padding:.1em 1.3em;
+.servicos > div > .main-btn > .span-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 8vw;
+    height: 4.5vh;
+    color: #6a8603;
+    border: 2px solid #000;
     border-radius: 1em;
     bottom: .5em;
     cursor: pointer;
-    transition: .6s;
+    transition: .3s;
+    box-sizing: border-box;
 }
 
-.servicos > div > .span-btn:hover{
-    border: 2px solid #00694a;
+.servicos > div > .main-btn > .span-btn > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 6.8vw;
+    height: 3vh;
+    transition: .2s;
+ }
+
+.servicos > div > .main-btn > .span-btn > span:hover{
+   transform: scale(1.08);
+   border-radius:1em ;
+   background-color: #001e29;
+   color: #fff;
+  
+}
+
+
+.area-servicos > div .span-icon{
+   font-size: 3em;
+   position: absolute;
+   top: 0;
 }
 
 
