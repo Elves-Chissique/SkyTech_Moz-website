@@ -221,40 +221,34 @@ body{
     stroke: #fff;
 }
 
-.ring-progress, .ring-progress-50, .ring-progress-88{
-  
-}
-
-
-
 .progress-ring {
     transform: rotate(0deg); /* Começa o círculo no topo */
-  }
+}
   
   
-  .ring-progress {
+.ring-progress {
     fill: none;
     stroke-linecap: round; /* Bordas arredondadas */
     stroke-dasharray: 314; /* Circunferência do círculo */
     stroke-dashoffset: 78; /* Progresso */
     stroke: #3c6900;
     transition: stroke-dashoffset 0.5s ease;
-  }
+}
 
-  /*Segundo Ring*/
-  .progress-ring-50 {
+/*Segundo Ring*/
+.progress-ring-50 {
     transform: rotate(0deg); /* Começa o círculo no topo */
-  }
+}
   
   
-  .ring-progress-50 {
+.ring-progress-50 {
     fill: none;
     stroke-linecap: round; /* Bordas arredondadas */
     stroke-dasharray: 314; /* Circunferência do círculo */
     stroke-dashoffset: 157; /* Progresso */
     stroke: #696200;
     transition: stroke-dashoffset 0.5s ease;
-  }
+}
 
   /*Terceiro Ring*/
   .progress-ring-88 {
@@ -293,15 +287,17 @@ body{
     background-color: #835021;
 }
 
-.Descr > .second-article > .div-graphic-video{ 
-    width: 40%;
-    background-color: #ffffff56;
+.Descr > .second-article > .div-graph-picture{ 
+    display: flex;
+    justify-content: center;
+    width: 46%;
+    background-color: #fff;
     box-shadow: 0px 0px 8px;
     border-radius: .4em;
 }
 
-.Descr > .second-article > .div-graphic-video img{ 
-    width: 100%;
+.Descr > .second-article > .div-graph-picture img{ 
+    width: 90%;
 }
 
 .div-graphic-text{
@@ -312,15 +308,120 @@ body{
     text-shadow: 0px 0px 1px #000;
 }
 
-.div-graphic-text > p{
-    font-size: 1.8em;
-    margin-top: em;
-}
 
-.graphic-video{
+.div-graph-picture{
     width: 100%;
 }
 
+.firt-parag{
+    opacity: 0;
+    font-size: 1.5em;
+    margin-top: 1.2em;
+}
+
+/*Área de Serviços*/
+.area-servicos{
+    position: relative;
+    background-color: #001e29;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: 1em;
+    width: 100vw;
+    height: auto;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.area-servicos > div{
+    background-color: rgb(255, 255, 255,1);
+    width: 96%;
+    padding: 1em;
+    display: flex;
+    justify-content:center;
+    align-items: centera;
+    flex-direction: column;
+   margin-top: 2.5em;
+}
+
+.area-servicos > h1{
+    text-align: center;
+    font-size: 2.1em;
+    color: #fff;
+    position: absolute;
+    top: 1em;
+    z-index: 1;
+    text-shadow: 0px 0px 6px black;
+}
+
+/*caixas de serviços*/
+.servicos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+}
+
+.servicos > div{
+    padding: 1.5em;
+    box-shadow: 0px 0px 4px #835021;
+    transition: .6s;
+    width: 25%;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    color: #fff;
+    background-color: #001e29;
+    
+}
+
+.servicos > div:hover{
+    padding: 1.5em;
+    box-shadow: 0px 0px 8px #00694aaa;
+}
+
+.servicos > div > .span-title{
+    color:#835021;
+    margin-bottom: 1.5em;
+    font-size: 1.4em;
+    
+    
+}
+
+#main-btn{
+    background-color:#ffffffd2;
+    width: 100%;
+    position: absolute;
+    margin-bottom: -14em;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-btn:hover{
+    box-shadow: 0px 0px 6px red;
+}
+
+.servicos > div > #main-btn > .span-btn{
+    color: brown;
+    border: 2px solid #835021;
+    padding:.1em 1.3em;
+    border-radius: 1em;
+    bottom: .5em;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.servicos > div > .span-btn:hover{
+    border: 2px solid #00694a;
+}
 
 
 /*-------------começando configuração de BodyII or Area Comercial-----------------*/
@@ -340,7 +441,7 @@ body{
 
 
 .bodyII > .inicial-picture{
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     gap:2em;
     justify-content: center;
@@ -387,18 +488,19 @@ body{
 }
 
 .video-bg {
+    margin-top: 20vh;
     position: fixed;
     top: auto;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 80vh;
     object-fit: cover; /* Ajusta o vídeo para cobrir o fundo */
     z-index: -1; /* Coloca o vídeo atrás de outros elementos */
 }
 
 .bodyII .slogan{
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
