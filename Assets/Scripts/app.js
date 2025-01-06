@@ -60,6 +60,14 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/*Area de linkar Vanilla Tillt*/
+window.addEventListener('DOMContentLoaded', ()=>{
+   const caixasServicos = document.querySelectorAll('.caixas-servicos')
+   VanillaTilt.init(document.querySelectorAll(".caixas-servicos"));
+})
+
+
+
 
 
 

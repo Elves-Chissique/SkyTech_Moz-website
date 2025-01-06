@@ -366,7 +366,7 @@ body{
 
 .servicos > div.caixas-servicos{
     padding: 1.5em;
-    transition: .6s;
+    transition: .2s;
     width: 25%;
     height: 50vh;
     display: flex;
