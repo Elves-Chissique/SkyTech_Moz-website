@@ -456,6 +456,22 @@ body{
    top: 0;
 }
 
+.NossasQualidades{
+    color:#000;
+    margin-top: -5em;
+    background-color: #001e29;
+}
+
+.div-qualidades{
+    color:#fff;
+    background-color: #001e29;
+}
+
+.NossasQualidades marquee > h1{
+    display: inline;
+    margin-right: 1em;
+}
+
 
 /*-------------começando configuração de BodyII or Area Comercial-----------------*/
 .bodyII{
@@ -545,3 +561,4 @@ body{
 @media (max-width: 768px){
     
 }
+
