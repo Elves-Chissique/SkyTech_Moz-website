@@ -476,17 +476,15 @@ body{
     border-radius: .5em;
 }
 
-marquee{
-    display: flex;
-}
-
-.NossasQualidades marquee > h1{
-    display: inline;
-    margin-right: 1em;
-    color:#ffffffb7;
-}
 .about-us{
     position: relative;
+    padding-top:2em;
+    background-color: red;
+    width: 70vw;
+}
+
+#whoAreWe{
+    padding-top: 2.5em;
 }
 
 .article-about{
@@ -495,7 +493,7 @@ marquee{
     gap: 1em;
     align-items: center;
     background-color: #835021;
-    background-image: url('../Images/bb.jpeg');
+    background-image: url('../Images/earthday.png');
     background-position: right;
     background-attachment: fixed;
     padding: 1em;
@@ -510,6 +508,7 @@ marquee{
     letter-spacing: .2em;
     width: 40em;
     height: 29em;
+    background-color: #00000056;
     box-shadow: 0px 0px 8px;
     color: #fff;
     border-radius: 1em;
@@ -537,7 +536,7 @@ marquee{
     font-size: 2.1em;
     color: #fff;
     position: absolute;
-    top: -.3em;
+    top: -.8em;
     left:0em;
     z-index: 1;
     text-shadow: 0px 0px 6px black;
@@ -593,8 +592,8 @@ marquee{
     justify-content: space-around;
     align-items: center;
     background-color: #835021;
-    background-image: url('../Images/cc.jpeg');
-    background-position: right;
+    background-image: url('../Images/3c.jpg');
+    background-position: center;
     background-attachment: fixed;
     padding: 1em;
     height: 100vh;
