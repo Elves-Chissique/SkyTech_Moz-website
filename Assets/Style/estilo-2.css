@@ -457,21 +457,176 @@ body{
 }
 
 .NossasQualidades{
-    color:#000;
-    margin-top: -5em;
-    background-color: #001e29;
+    background-color:red;
+    width: 0;
+    height: 0em;
+}
+
+.otraClass{
+    background-color: red;
 }
 
 .div-qualidades{
     color:#fff;
     background-color: #001e29;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5em;
+}
+
+marquee{
+    display: flex;
 }
 
 .NossasQualidades marquee > h1{
     display: inline;
     margin-right: 1em;
+    color:#ffffffb7;
+}
+.about-us{
+    position: relative;
 }
 
+.article-about{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    align-items: center;
+    background-color: #835021;
+    background-image: url('../Images/bb.jpeg');
+    background-position: right;
+    background-attachment: fixed;
+    padding: 1em;
+    height: 100vh;
+}
+
+
+.div-aboutText{
+    text-align: justify;
+    padding: .5em;
+    font-size: .8em;
+    letter-spacing: .2em;
+    width: 40em;
+    height: 29em;
+    box-shadow: 0px 0px 8px;
+    color: #fff;
+    border-radius: 1em;
+}
+
+.article-about > div.div-aboutImage{
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px;
+    padding: 1em;
+}
+
+
+.div-aboutImage > img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #ffffff00;
+
+}
+
+.about-us h1{
+    text-align: center;
+    font-size: 2.1em;
+    color: #fff;
+    position: absolute;
+    top: -.3em;
+    left:0em;
+    z-index: 1;
+    text-shadow: 0px 0px 6px black;
+    width: 100%;
+}
+
+/*Our Vision*/
+.separador{
+    position: relative;
+    background-color: #001e29;
+}
+.separador > .article-separador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    height: 100vh;
+}
+
+.separador >.article-separador> .div-separadorText{
+    text-align: justify;
+    padding: .5em;
+    font-size: .8em;
+    letter-spacing: .2em;
+    width: 40em;
+    height: 29em;
+    box-shadow: 0px 0px 8px;
+    color: #0fff;
+    border-radius: 1em;
+}
+
+.separador >.article-separador> .div-separadorImage{
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px;
+    padding: 1em;
+}
+
+.separador > .article-separador > div > img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #ffffff00;
+}
+
+.our-vision{
+    position: relative;
+}
+
+.our-vision .article-vision{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #835021;
+    background-image: url('../Images/cc.jpeg');
+    background-position: right;
+    background-attachment: fixed;
+    padding: 1em;
+    height: 100vh;
+}
+
+.our-vision >.article-vision> .div-visionText{
+    text-align: justify;
+    padding: .5em;
+    font-size: .8em;
+    letter-spacing: .2em;
+    width: 40em;
+    height: 29em;
+    box-shadow: 0px 0px 8px;
+    color: #fff;
+    border-radius: 1em;
+    
+}
+
+.our-vision >.article-vision> .div-visionImage{
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px;
+    padding: 1em;
+}
+
+.our-vision > .article-vision> div > img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #ffffff00;
+}
 
 /*-------------começando configuração de BodyII or Area Comercial-----------------*/
 .bodyII{
