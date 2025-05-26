@@ -502,16 +502,38 @@ body{
 
 
 .div-aboutText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     text-align: justify;
     padding: .5em;
-    font-size: .8em;
+    font-size: 1em;
     letter-spacing: .2em;
     width: 40em;
-    height: 29em;
-    background-color: #00000056;
+    height: 22em;
+    background-color: #0000006c;
     box-shadow: 0px 0px 8px;
     color: #fff;
     border-radius: 1em;
+    position: relative;
+}
+
+
+.div-aboutText p{
+    font-variant: small-caps;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+.div-aboutText > h2{
+    position: absolute;
+    font-size: 2em;
+    top: .5em;
+    background-color: #001734c0;
+    width: 97%;
+    border-radius: .2em;
+    padding: 0em .5em;
 }
 
 .article-about > div.div-aboutImage{
@@ -526,7 +548,6 @@ body{
 .div-aboutImage > img{
     width:100%;
     height: 100%;
-    border-radius: 50%;
     border: 1px solid #ffffff00;
 
 }
@@ -557,15 +578,38 @@ body{
 }
 
 .separador >.article-separador> .div-separadorText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     text-align: justify;
     padding: .5em;
-    font-size: .8em;
+    font-size: 1em;
     letter-spacing: .2em;
     width: 40em;
-    height: 29em;
+    height: 22em;
+    padding: .5em;
     box-shadow: 0px 0px 8px;
     color: #0fff;
     border-radius: 1em;
+    position: relative;
+}
+
+.separador >.article-separador > .div-separadorText > p{
+    font-variant: small-caps;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+.separador >.article-separador > .div-separadorText > h2{
+ position: absolute;
+    font-size: 2em;
+    top: .5em;
+    background-color: #ffffff49;
+    width: 97%;
+    border-radius: .2em;
+    padding: 0em .5em;
+    color:#fff;
 }
 
 .separador >.article-separador> .div-separadorImage{
@@ -592,8 +636,8 @@ body{
     justify-content: space-around;
     align-items: center;
     background-color: #835021;
-    background-image: url('../Images/3c.jpg');
-    background-position: center;
+    background-image: url('../Images/15039.jpg');
+    background-position: left;
     background-size: cover;
     background-attachment: fixed;
     padding: 1em;
@@ -601,17 +645,38 @@ body{
 }
 
 .our-vision >.article-vision> .div-visionText{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     text-align: justify;
     padding: .5em;
-    font-size: .8em;
+    font-size: 1.em;
     letter-spacing: .2em;
     width: 40em;
-    height: 29em;
+    height: 22em;
+    padding: .5em;
     box-shadow: 0px 0px 8px;
-    background-color: #00000063;
     color: #fff;
     border-radius: 1em;
+    position: relative;
     
+}
+
+.our-vision >.article-vision> .div-visionText > p{
+    font-variant: small-caps;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+.our-vision >.article-vision > .div-visionText > h2{
+    position: absolute;
+    font-size: 2em;
+    top: .5em;
+    background-color: #9e733a42;
+    width: 97%;
+    border-radius: .2em;
+    padding: 0em .5em;
 }
 
 .our-vision >.article-vision> .div-visionImage{
