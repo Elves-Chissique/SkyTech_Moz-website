@@ -696,6 +696,48 @@ body{
     border: 1px solid #ffffff00;
 }
 
+/*ABA our values*/
+.our-values{
+    position: relative;
+    padding:2em;
+    background-color: #001e29;
+}
+
+.our-values > article{
+    display: flex;
+    gap: 1em;
+}
+
+.our-values > .article-values > p{
+    background-color: #001e29;
+    top: 1em;
+    padding: 1em;
+    color: #fff;
+    font-size: 1em;
+}
+
+.our-values > article .caixa{
+    width: 35%;
+    background-color: #8f8989;
+    color: #fff;
+    border-radius: 1.4em;
+}
+
+
+.our-values > article .caixa > p{
+    padding: 1em;
+    text-align: center;
+    font-size: .9em;
+    font-family: cursive;
+}
+
+.our-values > article .caixa >h2 > img{
+    width: 100%;
+    height: 50%;
+    border-radius: .9em;
+}
+
+
 /*-------------começando configuração de BodyII or Area Comercial-----------------*/
 .bodyII{
     position: relative;
