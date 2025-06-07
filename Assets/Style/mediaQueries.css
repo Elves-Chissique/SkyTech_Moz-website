@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@media (max-width: 700px) {
+    .secI ::-webkit-scrollbar{
+        display: none; /*Desligando a barra de rolagem*/
+    }
+
+    html{
+        overflow-x: hidden;
+        scrollbar-width: none; /*Desligando a barra de rolagem*/
+    }
+
+
+    
+    .main > nav > div.logo{ /*Desligando a logo no cabeçalho*/
+        display: none;
+    }
+
+    article.Descr {
+        display: block;
+        width: 100%;
+    }
+
+    article.Descr > article{
+        display: inline-block;
+        width: 97vw;
+        margin-left: -1.6em;
+    }
+
+    .Descr > .second-article > .div-graph-picture{ 
+    justify-content: center;
+    width: 100%;
+    }
+
+    article.Descr > article > img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .div-graphic-text{
+    width: 100%;
+    }
+
+    .firt-parag{
+    font-size: .7em;
+    }
+
+    /*caixas de serviços*/
+    .servicos{
+        display: block;
+        padding: 2em;
+        width: 100vw;
+    }
+
+   .servicos > div.caixas-servicos{
+    width: 85vw;
+    margin-left:-2.5em;
+    margin-bottom: 1.5em;
+    }
+
+    .servicos > div > .main-btn > .span-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 30vw;
+    height: 4.5vh;
+    color: #6a8603;
+    border: 2px solid #000;
+    border-radius: 1em;
+    bottom: .5em;
+    cursor: pointer;
+    transition: .3s;
+    box-sizing: border-box;
+    }
+
+    .servicos > div > .main-btn > .span-btn > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 25.5vw;
+    height: 3vh;
+    transition: .2s;
+    }
+
+   .article-about, .article-separador{
+    flex-direction: column;
+    }
+
+    .div-aboutText, .div-separadorText{
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .separador >.article-separador> .div-separadorText{
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .article-about > div.div-aboutImage{
+        width: 18em;
+        height: 18em;
+    }
+
+    .separador >.article-separador> .div-separadorImage{
+        width: 18em;
+        height: 18em;
+    }
+
+}
