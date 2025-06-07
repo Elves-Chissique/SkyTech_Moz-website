@@ -195,77 +195,65 @@ body{
     background-position: center;
 }
 
-/*---------------------------------*/
+/*--------------RINGs de PERCENTAGEM-------------------*/
 
-.percentegem-aceitacao{
-    position: absolute;
-    bottom: 1em;
-    background-color:rgb(0, 30, 41,.5);
-    width: 97.5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 30vh;
-    border-radius: 1em;
+.percentegem-aceitacao {
+  position: absolute;
+  background-color: rgba(0, 30, 41, 0.5);
+  width:  100vw;
+  margin: 2em auto;
+  bottom: -2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  border-radius: 1em;
 }
 
-.div-progress{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.div-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ring-bg {
-    fill: none;        /*Elemento comum para todos os Rings*/
-    stroke: #fff;
+  fill: none;
+  stroke: #fff;
 }
 
-.progress-ring {
-    transform: rotate(0deg); /* Começa o círculo no topo */
+.progress-ring,
+.progress-ring-50,
+.progress-ring-88 {
+  transform: rotate(-90deg);
 }
-  
-  
+
+.ring-progress,
+.ring-progress-50,
+.ring-progress-88 {
+  fill: none;
+  stroke-linecap: round;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
 .ring-progress {
-    fill: none;
-    stroke-linecap: round; /* Bordas arredondadas */
-    stroke-dasharray: 314; /* Circunferência do círculo */
-    stroke-dashoffset: 78; /* Progresso */
-    stroke: #3c6900;
-    transition: stroke-dashoffset 0.5s ease;
+  stroke: #3c6900;
 }
 
-/*Segundo Ring*/
-.progress-ring-50 {
-    transform: rotate(0deg); /* Começa o círculo no topo */
-}
-  
-  
 .ring-progress-50 {
-    fill: none;
-    stroke-linecap: round; /* Bordas arredondadas */
-    stroke-dasharray: 314; /* Circunferência do círculo */
-    stroke-dashoffset: 157; /* Progresso */
-    stroke: #696200;
-    transition: stroke-dashoffset 0.5s ease;
+  stroke: #696200;
 }
 
-  /*Terceiro Ring*/
-  .progress-ring-88 {
-    transform: rotate(0deg); /* Começa o círculo no topo */
-  }
-  
-  
-  .ring-progress-88 {
-    fill: none;
-    stroke-linecap: round; /* Bordas arredondadas */
-    stroke-dasharray: 314; /* Circunferência do círculo */
-    stroke-dashoffset: 40; /* Progresso */
-    stroke: #a30461;
-    transition: stroke-dashoffset 0.5s ease;
-  }
-  
- 
+.ring-progress-88 {
+  stroke: #a30461;
+}
+
+/*----Configuração dos textos dos Rings---------*/
+.textRotation{
+    transform: rotate(90deg);	
+}
 
 /*----Configuração de Article de Serviços---------*/
 .Descr{
@@ -696,7 +684,7 @@ body{
     border: 1px solid #ffffff00;
 }
 
-/*ABA our values*/
+/* Configuração da ABA our values*/
 .our-values{
     position: relative;
     padding:2em;
@@ -705,6 +693,7 @@ body{
 
 .our-values > article{
     display: flex;
+    justify-content: space-between;
     gap: 1em;
 }
 
@@ -717,10 +706,12 @@ body{
 }
 
 .our-values > article .caixa{
-    width: 35%;
+    width: 33%;
     background-color: #8f8989;
-    color: #fff;
+    color: #b8b1b1;
     border-radius: 1.4em;
+    transition: .5s;
+    cursor: default;
 }
 
 
@@ -745,6 +736,11 @@ body{
     right: 1.5em;
     color: #8a8787f8;
     transition: 1s;
+}
+
+.filho-caixa-1:hover .p1 {
+  color:red;
+  background-color: brown;
 }
 
 .our-values > article .caixa >div:hover h2{

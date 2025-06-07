@@ -9,6 +9,47 @@ item.classList.remove('active'))
 list.forEach((item)=>
 item.addEventListener('click', activeLink))
 
+/*Configuraçao dos rings*/
+   function animateRingAndNumber(ringSelector, targetPercent, duration, numberSelector, finalValue) {
+  const ring = document.querySelector(ringSelector);
+  const number = document.querySelector(numberSelector);
+  const radius = 50;
+  const circumference = 2 * Math.PI * radius;
+  let start = null;
+
+  ring.style.strokeDasharray = circumference;
+  ring.style.strokeDashoffset = circumference;
+
+  function step(timestamp) {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    const progressRatio = Math.min(progress / duration,1);
+    
+    // Anima o círculo
+    const offset = circumference - (targetPercent / 100 * circumference * progressRatio);
+    ring.style.strokeDashoffset = offset;
+
+    // Anima o número
+    const currentValue = Math.floor(finalValue * progressRatio);
+    number.textContent = `+${currentValue}`;
+
+    if (progress < duration) {
+      requestAnimationFrame(step);
+    } else {
+      number.textContent = `+${finalValue}`; // Garante valor final
+    }
+  }
+
+  requestAnimationFrame(step);
+}
+
+window.onload = () => {
+  animateRingAndNumber('.ring-progress', -65, 2000, '.num1', 3000);
+  animateRingAndNumber('.ring-progress-50', -50, 2000, '.num2', 150);
+  animateRingAndNumber('.ring-progress-88', -75, 2000, '.num3', 6000);
+};
+/* Fim da configuração dos rings*/
+
 
 /* Configurando alterção dos conteudos do Bodys*/
 
