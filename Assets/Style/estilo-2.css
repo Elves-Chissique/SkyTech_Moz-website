@@ -783,11 +783,49 @@ body{
     margin-top: 0em;
 }
 
-footer{
-    background-color: #835021;
-    color: #000;
-    width: 100%;
-}
+ footer {
+      background-color: #111827;
+      color: #d1d5db;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+    .footer-section h3 {
+      color: #3c6900;
+      margin-bottom: 15px;
+    }
+    .footer-section a {
+      color: #9ca3af;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .footer-section a:hover {
+      color: #3c6900;
+    }
+    .social-icons a {
+      color: #9ca3af;
+      margin-right: 15px;
+      font-size: 18px;
+    }
+    .social-icons a:hover {
+      color: #3c6900;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 40px;
+      border-top: 1px solid #374151;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #6b7280;
+    }
 
 
 /*-------------começando configuração de BodyII or Area Comercial-----------------*/
