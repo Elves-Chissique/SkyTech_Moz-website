@@ -783,6 +783,12 @@ body{
     margin-top: 0em;
 }
 
+footer{
+    background-color: #835021;
+    color: #000;
+    width: 100%;
+}
+
 
 /*-------------começando configuração de BodyII or Area Comercial-----------------*/
 .bodyII{
@@ -869,7 +875,4 @@ body{
    width: 70%;
 }
 
-@media (max-width: 768px){
-    
-}
 
