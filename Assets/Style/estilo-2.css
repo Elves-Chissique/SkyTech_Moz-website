@@ -781,14 +781,104 @@ body{
 /*Ouaatras Values*/
 .outras-values{
     margin-top: 0em;
+    margin-bottom: 10em;
 }
 
+/*Footer configuration*/
  footer {
-      background-color: #111827;
+    margin-top: 0;
+      background-color: #000;
       color: #d1d5db;
       padding: 40px 20px;
       font-family: Arial, sans-serif;
+      font-size: 13px;
     }
+
+    footer > article{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+        position: relative;
+        
+    
+    }
+    footer > article > div{
+        box-shadow: 0px 0px 5px #ffffffbb;
+        background-color:#374151;
+        width: 85%;
+        min-height: 40vh;
+        position: absolute;
+        top: -14em;
+        padding: 1.5em;
+    }
+
+    footer > article > div > form{
+        font-size: 1.4em;
+        justify-content:space-between;
+        gap: 1em;
+        margin-top: 1.5em;
+        display: flex;
+        padding: 1em;
+        color: #bbb9b9;
+
+    }
+
+    footer > article > div > form h3{
+        font-size: 1.6em;
+        color: #bbb9b9;
+
+    }
+
+    footer > article > div > form div{
+      width: 100%;
+      
+    }
+
+    div.image-sky-2{
+        text-align: right;
+    }
+
+    footer > article > div > form > div > input{   
+        outline: none;
+        width: 90%;
+        background-color: #000;
+        border: none;
+        padding: .3em;
+        color: #fff;
+        margin-top: .7em;
+        font-size: 11px;
+    }
+
+    footer > article > div > form > div > button{   
+        outline: none;
+        width: 25%;
+        height: 32px;
+        background-color: #000;
+        border: none;
+        padding: .3em;
+        color: #fff;
+        border-radius: .3em;
+        transition: .5s;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: .5em;
+        border: 2px solid rgba(123, 126, 124, 0);
+    }
+
+    footer > article > div > form > div > button:hover{   
+        border: 2px solid #042;
+        font-size: 13px;  
+    }
+
+       
+    
+
+    footer > article > div > form > div > img{
+        width: 60%;
+        border-radius: .7em;
+    }
+    
     .footer-container {
       max-width: 1200px;
       margin: auto;
@@ -797,26 +887,31 @@ body{
       gap: 30px;
     }
     .footer-section h3 {
-      color: #3c6900;
+      color: #042;
       margin-bottom: 15px;
+      font-size: 17px;
     }
     .footer-section a {
       color: #9ca3af;
       text-decoration: none;
       display: block;
       margin-bottom: 10px;
-      font-size: 14px;
+      font-size: 12px;
     }
     .footer-section a:hover {
-      color: #3c6900;
+      color: #042;
     }
     .social-icons a {
       color: #9ca3af;
       margin-right: 15px;
       font-size: 18px;
+      transition: all .5s;
+      width: 40px;
+
     }
     .social-icons a:hover {
-      color: #3c6900;
+      color: #042;
+      transform: scale(.9);
     }
     .copyright {
       text-align: center;
