@@ -420,16 +420,21 @@ body{
     box-sizing: border-box;
 }
 
-.servicos > div > .main-btn > .span-btn > span{
+.servicos > div > .main-btn > .span-btn > a{
+    text-decoration: none;
+    color:#696200;
+}
+
+.servicos > div > .main-btn > .span-btn > a > span{
     display: flex;
     justify-content: center;
     align-items: center;   
     width: 6.8vw;
     height: 3vh;
     transition: .2s;
- }
+}
 
-.servicos > div > .main-btn > .span-btn > span:hover{
+.servicos > div > .main-btn > .span-btn > a > span:hover{
    transform: scale(1.08);
    border-radius:1em ;
    background-color: #001e29;

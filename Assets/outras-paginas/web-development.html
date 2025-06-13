@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyTech Moz - Desenvolvimento Web</title>
+  <link rel="stylesheet" href="../Style/web-development.css" />
+</head>
+<body>
+  <div class="web-dev-container">
+    <img src="../Images/SKY-UPDATED Sem Fundo.png" alt="SkyTech Logo" class="logo" />
+
+    <button class="schedule-btn" onclick="toggleCalendar()">Agendar reunião com um especialista</button>
+
+    <div class="calendar-form" id="calendarForm">
+      <h3>Escolha a data e hora para sua reunião:</h3>
+      <input type="date" id="meetingDate" />
+      <input type="time" id="meetingTime" />
+      <button class="submit-btn" onclick="submitMeeting()">Confirmar Reunião</button>
+    </div>
+
+    <div class="intro-box">
+      <h1>Desenvolvimento Web Profissional</h1>
+      <p>
+        Criamos websites sob medida para fortalecer a presença online do seu negócio.
+        Nossos pacotes incluem suporte técnico, orientação no posicionamento digital e design adaptado ao seu segmento.
+        O desenvolvimento é feito com dedicação, respeitando os prazos de 5 até 45 dias, conforme o pacote escolhido.
+        Os planos <strong>Sky-Business</strong> e <strong>Sky-Premium</strong> permitem pagamento em até 2 ou 3 parcelas.
+      </p>
+      <div class="toggle-switch">
+        <span>Pagamento:</span>
+        <label class="switch">
+          <input type="checkbox" id="paymentToggle" onclick="togglePricing()">
+          <span class="slider round"></span>
+        </label>
+        <span id="paymentLabel">Anual</span>
+      </div>
+    </div>
+
+    <div class="packages">
+      <div class="package-card">
+        <h2>Sky-Starter</h2>
+        <p class="price" id="starterPrice">7.500 MT/ano</p>
+        <ul>
+          <li>Site de 1 a 3 páginas</li>
+          <li>Design Responsivo</li>
+          <li>Hospedagem incluída (1 ano)</li>
+          <li>1 conta de e-mail corporativo</li>
+          <li>Formulário de contato</li>
+          <li>Entrega em até 5 dias úteis</li>
+        </ul>
+        <button class="buy-btn">Subscrever Sky-Starter</button>
+      </div>
+
+      <div class="package-card">
+        <h2>Sky-Business</h2>
+        <p class="price" id="businessPrice">15.000 MT/ano</p>
+        <ul>
+          <li>Site de 4 a 10 páginas</li>
+          <li>Design Personalizado + Responsivo</li>
+          <li>Hospedagem incluída (1 ano)</li>
+          <li>3 contas de e-mail corporativo</li>
+          <li>Formulários, mapas e galeria</li>
+          <li>Integração com redes sociais</li>
+          <li>Entrega em até 16 dias úteis</li>
+          <li>Pagamento em até 2 etapas</li>
+        </ul>
+        <button class="buy-btn">Subscrever Sky-Business</button>
+      </div>
+
+      <div class="package-card">
+        <h2>Sky-Premium</h2>
+        <p class="price" id="premiumPrice">33.000 MT/ano</p>
+        <ul>
+          <li>Site completo e dinâmico (10+ páginas)</li>
+          <li>Design estratégico e exclusivo</li>
+          <li>Hospedagem incluída (1 ano)</li>
+          <li>5 contas de e-mail corporativo</li>
+          <li>Integrações avançadas (API, M-Pesa, etc.)</li>
+          <li>Suporte completo e relatórios mensais</li>
+          <li>Entrega entre 30 a 45 dias úteis</li>
+          <li>Pagamento em até 3 etapas</li>
+        </ul>
+        <button class="buy-btn">Subscrever Sky-Premium</button>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="history.back()">← Voltar</button>
+  </div>
+
+  <script>
+    function togglePricing() {
+      const isMonthly = document.getElementById("paymentToggle").checked;
+      document.getElementById("starterPrice").innerText = isMonthly ? "625 MT/mês" : "7.500 MT/ano";
+      document.getElementById("businessPrice").innerText = isMonthly ? "1.250 MT/mês" : "15.000 MT/ano";
+      document.getElementById("premiumPrice").innerText = isMonthly ? "2.750 MT/mês" : "33.000 MT/ano";
+      document.getElementById("paymentLabel").innerText = isMonthly ? "Mensal" : "Anual";
+    }
+
+    function toggleCalendar() {
+      const form = document.getElementById("calendarForm");
+      form.style.display = form.style.display === "block" ? "none" : "block";
+    }
+
+    function submitMeeting() {
+      const date = document.getElementById("meetingDate").value;
+      const time = document.getElementById("meetingTime").value;
+      if (date && time) {
+        alert(`Reunião agendada para ${date} às ${time}`);
+      } else {
+        alert("Por favor, selecione data e hora");
+      }
+    }
+  </script>
+</body>
+</html>
