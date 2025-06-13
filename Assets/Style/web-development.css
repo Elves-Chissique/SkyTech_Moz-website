@@ -229,3 +229,71 @@ input:checked + .slider:before {
 .back-btn:hover {
   background-color: #5a6268;
 }
+
+/*Estilização de formulario flotuante*/
+    .form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.contact-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 78vw;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  z-index: 9999;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form .form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.contact-form .submit-btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #005fa3;
+}
+
