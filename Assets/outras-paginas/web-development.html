@@ -50,7 +50,7 @@
           <li>&#10003; Hospedagem incluída (1 ano)</li>
           <li>&#10003; 1 conta de e-mail corporativo</li>
           <li>&#10003; Formulário de contato</li>
-          <li>&#10003; Entrega em até 5 dias úceis</li>
+          <li>&#10003; Entrega em até 5 dias úteis</li>
         </ul>
         <button class="buy-btn" onclick="toggleContactForm('Sky-Starter')">Solicitar Sky-Starter</button>
 
@@ -62,13 +62,14 @@
         <ul>
           <li>&#10003; Site de 4 a 10 páginas</li>
           <li>&#10003; Design Personalizado + Responsivo</li>
-          <li>&#10003; Hospedagem incluída (1 ano)</li>
+          <li>&#10003; Hospedagem incluída</li>
           <li>&#10003; 3 contas de e-mail corporativo</li>
           <li>&#10003; Formulários, mapas e galeria</li>
           <li>&#10003; Integração com redes sociais</li>
-          <li>&#10003; Entrega em até 16 dias úceis</li>
+          <li>&#10003; Entrega em até 16 dias úteis</li>
           <li>&#10003; Pagamento em até 2 etapas</li>
         </ul>
+        <br>
         <button class="buy-btn" onclick="toggleContactForm('Sky-Business')">Solicitar Sky-Business</button>
       </div>
 
@@ -78,13 +79,14 @@
         <ul>
           <li>&#10003; Site completo e dinâmico (10+ páginas)</li>
           <li>&#10003; Design estratégico e exclusivo</li>
-          <li>&#10003; Hospedagem incluída (1 ano)</li>
+          <li>&#10003; Hospedagem incluída</li>
           <li>&#10003; 5 contas de e-mail corporativo</li>
           <li>&#10003; Integrações avançadas (API, M-Pesa, etc.)</li>
           <li>&#10003; Suporte completo e relatórios mensais</li>
-          <li>&#10003; Entrega entre 30 a 45 dias úceis</li>
+          <li>&#10003; Entrega entre 30 a 45 dias úteis</li>
           <li>&#10003; Pagamento em até 3 etapas</li>
         </ul>
+        <br>
         <button class="buy-btn" onclick="toggleContactForm('Sky-Premium')">Solicitar Sky-Premium</button>
       </div>
     </div>
@@ -150,17 +152,22 @@
 
     <div id="contactForm" class="contact-form">
       <div class="form-header">
-        <h3>Solicitar pacote</h3>
-        <button class="close-btn" onclick="toggleContactForm()">✕</button>
-      </div>
-      <form onsubmit="submitContactForm(event)">
-        <input type="text" id="userName" placeholder="Seu nome" required />
-        <input type="email" id="userEmail" placeholder="Seu e-mail" required />
-        <input type="text" id="companyName" placeholder="Nome da empresa (opcional)" />
-        <input type="text" id="selectedPackage" readonly />
-        <textarea id="userMessage" placeholder="Explique sua ideia ou preferência..." rows="4"></textarea>
-        <button type="submit" class="submit-btn">Enviar solicitação</button>
-      </form>
+          <h4>Pacote Solicitado:</h4> <input type="text" id="selectedPackage" placeholder="." readonly />
+          <button class="close-btn" onclick="toggleContactForm()">✕</button>
+        </div>
+      <article>
+        <p>
+          Após o envio desta solicitação, nossa equipe agendará uma reunião de consultoria online para amanhã, visando fornecer suporte técnico especializado e orientar seu negócio no processo de inserção no ambiente digital.
+        </p>
+        <form onsubmit="submitContactForm(event)">
+          <input type="text" id="userName" placeholder="Seu nome" required />
+          <input type="email" id="userEmail" placeholder="Seu e-mail" required />
+          <input type="text" id="companyName" placeholder="Seu contato" required />
+          <br>
+          <textarea id="userMessage" placeholder="Nos diga quando estará disponível amanhã para a nossa reunião de planejamento." rows="4"></textarea>
+          <button type="submit" class="submit-btn">Enviar solicitação</button>
+        </form>
+      </article>
     </div>
 
 </body>

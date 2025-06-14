@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f2f5f9;
+  background: #c5cbe9;
   color: #333;
 }
 
@@ -86,7 +86,7 @@ body {
   padding: 30px;
   margin-bottom: 30px;
   text-align: center;
-  width: 100%;
+  width: 95%;
 }
 
 .intro-box h1 {
@@ -167,12 +167,18 @@ input:checked + .slider:before {
 
 .package-card {
   flex: 1;
+  position: relative;
   min-width: 280px;
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   padding: 20px;
   text-align: center;
+  transition: all 0.4s;
+}
+
+.package-card:hover {
+ margin-top: -1em;
 }
 
 .package-card h2 {
@@ -199,12 +205,16 @@ input:checked + .slider:before {
 }
 
 .buy-btn {
-  background-color: #0077cc;
-  color: #fff;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 0px 0px 8px #000;
+  color: #000;
   border: none;
   padding: 12px 24px;
   border-radius: 6px;
   cursor: pointer;
+  bottom: .5em;
+  right: .5em;
   transition: background-color 0.3s;
 }
 
@@ -260,14 +270,68 @@ input:checked + .slider:before {
   overflow-y: auto;
 }
 
+.contact-form article{
+    width: 70%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form article p{
+    width: 85%;
+    text-align: justify;
+    font-size: 0.9rem;
+  
+}
+
+.contact-form article form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:80;
+}
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
+  width: 65%;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: .8rem;
+  color: #005fa3;
 }
+
+.contact-form textarea{
+    padding: 1em;
+}
+.contact-form input{
+    border-radius: 0;
+    border:none;
+    outline: none;
+    border-bottom: #333 solid 1px;
+    margin-top: .5em;
+    padding-top: .8em;
+    margin-bottom: .5em;
+    
+}
+
+.contact-form input::placeholder{
+    color: #a09c9c;
+    font-size: .7rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.contact-form input:hover::placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+   
 
 .contact-form .form-header {
   display: flex;
@@ -297,3 +361,10 @@ input:checked + .slider:before {
   background-color: #005fa3;
 }
 
+#selectedPackage{
+    border: none;
+    width: 20%;
+    font-weight: bolder;
+    color:#005fa3;
+    font-size: 1.3rem;
+}
