@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Sky_Tech Moz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background-color:transparent;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 58vh;
+      max-width: 400px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .project-name {
+      background-color: #000;
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      height: 58vh;
+      max-width: 0;
+      margin-left: -5em;
+      z-index: 1;
+      position: relative;
+    }
+
+    .article-project-name {
+      margin-left: 1em;
+      visibility: hidden;
+      transition: visibility 0.8s ease-in-out;
+      color: #fff;
+      text-align: center;
+      font-size: .9rem;
+      cursor: pointer;
+      
+    }
+
+    .first-project-logos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+        font-size: x-small;
+    }
+    .article-project-name img {
+      width: 100px;
+      height: 100px;
+      margin-top: .8rem;
+    }
+
+    .article-project-name img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .article-project-name img.fineDinning {
+      border: 2px solid #fff;
+      border-radius: 50%;
+    }
+
+    .erro{
+        display: none;
+        Color:brown;
+        position: absolute;
+        bottom: 10px;
+        width: 88%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+
+    .login-container h2 {
+      margin-bottom: 1.5rem;
+      color: #2575fc;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 40px 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .input-group i {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: #2575fc;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-btn:hover {
+      background: #1d5ed6;
+    }
+
+    .footer-text {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .footer-text a {
+      color: #2575fc;
+      text-decoration: none;
+    }
+
+    .footer-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="login-container">
+            <h2>Project Workspace</h2>
+            <form>
+            <div class="input-group">
+                <input class="name" type="text" placeholder="Your name" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-group">
+                <input class="password" type="password" placeholder="Senha" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button type="submit" class="login-btn">Entrar</button>
+            </form>
+            <div class="footer-text">
+            <p>Esqueceu sua senha? <a href="#">Recuperar</a></p>
+            <p>Não tem uma conta? <a href="#">Criar conta</a></p>
+            </div>
+        </div>
+        <div class="project-name">
+            <article class="article-project-name">
+                <h2>pick your Partnership Project</h2>
+                <br>
+                <div class="first-project-logos">
+                    <i>
+                        <i>Sky_Tech Moz</i>
+                        <br>
+                        <img class="sky_tech" src="../Images/SKY-UPDATED Sem Fundo.png" alt="">
+                    </i>
+                    <i>
+                        <i>SkyPro Laundry</i>
+                        <br>
+                        <img class="skyPro" src="../Images/SkyPro-Logo.png" alt="">
+                    </i>
+                    <i> 
+                        <i>Fine Dinning</i>
+                        <br>
+                        <img class="fineDinning" src="../Images/FineDinning-logo.png" alt="">
+                    </i>
+                </div>
+                
+            </article>
+            <div class="erro">Erro ao acessar o projeto Sky_Tech Moz.</div>
+        </div>
+        
+
+        </div>
+    </div>
+    <script>
+        // Primeiros Seletores
+        let loginBtn = document.querySelector('.login-btn');
+        let SkyTechMoz = document.querySelector('.sky_tech');
+        let SkyProLaundry = document.querySelector('.skyPro');
+        let FineDinning = document.querySelector('.fineDinning');
+        let projectName = document.querySelector('.project-name')
+        let articleProjectName = document.querySelector('.article-project-name')
+
+        
+        loginBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // ❗ Impede o formulário de submeter e recarregar a página
+        open(); // Chama a função que lida com login
+        });
+
+        // Event listeners for buttons
+        loginBtn.addEventListener('click', open)
+        SkyTechMoz.addEventListener('click', skytech)
+        
+        function open(){
+            // Segundos Seletores (formularios)
+            let nameInput = document.querySelector('.name');
+            let passwordInput = document.querySelector('.password');
+        
+            if(nameInput.value == "Elves Chissique" && passwordInput.value == "Pedrosa.2" || nameInput.value == "00" && passwordInput.value == "11"){
+                // Exibe o nome do projeto e ajusta o estilo
+                projectName.style.maxWidth = "450px"
+                projectName.style.marginLeft = "-1.5em"
+                projectName.style.transition = "max-width 0.8s ease-in-out"
+                articleProjectName.style.visibility = "visible";
+                articleProjectName.style.transitionDelay = "1s";
+            }
+            else{
+               alert("Preencha os campos devidamente para continuar.");
+                return; 
+            }
+        }
+
+        function skytech(){
+            let nameInput = document.querySelector('.name');
+            let passwordInput = document.querySelector('.password');
+            let erro = document.querySelector('.erro');
+
+            if(nameInput.value == "Elves Chissique" && passwordInput.value == "Pedrosa.2"){
+                // Redireciona para o projeto Sky_Tech Moz
+              window.location.href = "https://projects.zoho.com/portal/skytechmozdotcom#allprojects/2511821000000060714/";  
+            }
+            else{
+                // Exibe mensagem de erro
+                erro.style.display = "block";
+                setTimeout(() => {
+                    erro.style.display = "none";
+                }, 3000); // Esconde a mensagem após 3 segundos
+            }
+            
+        }
+
+         
+            
+    </script>
+</body>
+</html>

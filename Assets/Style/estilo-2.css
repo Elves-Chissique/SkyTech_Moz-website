@@ -50,6 +50,12 @@ body{
 
 }
 
+.nav .logo{
+    margin-top: -.65em;
+    width: 38%;
+    height: 11.5vh;
+}
+
 .nav > div{
     position: absolute;
     left: 0;
@@ -918,6 +924,46 @@ body{
       color: #042;
       transform: scale(.9);
     }
+
+    /*Adim Tools Config*/
+    .admin-tools{
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        padding: 0;
+        margin-top: 2em;
+        width: 15em;
+        height: 3em;
+        font-size: xx-small;
+    }
+
+    .admin-tools:hover .icon-legend{
+      display: inline-block;
+    }
+
+    .icon-legend{
+        display: none;
+    }
+
+    a#iconAdimin{
+      color: red;
+      margin-top: .5em;
+      border: 2px solid #042;
+      padding: .5em;
+      width: 3em;
+      height: 3em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    a#iconAdimin:hover{
+      color: red;
+      background-color: rgb(27, 27, 27);
+      
+    }
+
     .copyright {
       text-align: center;
       margin-top: 40px;
