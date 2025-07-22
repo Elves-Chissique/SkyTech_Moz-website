@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('../Images/3c.jpg');
+  background-image: url('../Images/2c.jpg');
   background-repeat:no-repeat ;
   background-size: cover;
   background-position: center;
@@ -91,9 +91,8 @@ body {
   margin-bottom: 30px;
   width: 95%;
   color:#000;
-
+  font-style: italic;
   font-size: 14.2px;
-  letter-spacing: .12em;
 }
 
 .intro-box h1 {
@@ -109,12 +108,13 @@ body {
   height: 4em;
   display: flex;
   align-items:end;
-  margin-top: -1.75em;
-  margin-bottom: .1em;
+  margin-top: -.8em;
+  margin-bottom: 1.2em;
   border-radius: 8px;
   padding-left: .5em;
   color: red;
   gap: .5em;
+  background-color: #00000077;
 }
 
 .pagamento{
