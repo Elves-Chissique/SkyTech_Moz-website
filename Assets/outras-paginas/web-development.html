@@ -23,14 +23,16 @@
 
     <div class="intro-box">
       <h1>Desenvolvimento Web Profissional</h1>
-      <p>
-        Por que o seu negócio precisa de um website profissional?
-        Em um mundo cada vez mais digital, não estar online é o mesmo que não existir.
-        Um website bem estruturado não é apenas uma vitrine — é um representante ativo da sua marca, 24 horas por dia.
+      <p id="intro_text">
+        <span>
+          Por que o seu negócio precisa de um website profissional? — 
+          Em um mundo cada vez mais digital, não estar online é o mesmo que não existir.
+          Um website bem estruturado não é apenas uma vitrine, é um representante ativo da sua marca, 24 horas por dia.
+        </span>
         <hr>
         Na <i>Sky_Tech Moz</i>, Criamos websites sob medida para fortalecer a presença digital do seu negócio.
         Nossos pacotes incluem suporte técnico dedicado, orientação estratégica para posicionamento online e design personalizado de acordo com o seu segmento.
-        O desenvolvimento é realizado com total comprometimento, respeitando prazos que variam entre 5 e 45 dias, conforme o plano escolhido.
+        O desenvolvimento é realizado com total comprometimento, respeitando prazos que variam entre 7 e 45 dias, conforme o plano escolhido.
         <br> <br>
         Para maior flexibilidade, os planos <strong>Sky-Business</strong> e <strong>Sky-Premium</strong> podem ser pagos em até 2 ou 3 parcelas, respectivamente. <br>
         Nossa equipe está pronta para ajudar você a alcançar seus objetivos digitais com soluções eficazes e personalizadas. <br>
@@ -50,7 +52,21 @@
     <div class="packages">
       <div class="package-card">
         <h2>Sky-Starter</h2>
-        <p class="price" id="starterPrice">7.500 MT/ano</p>
+        <p class="price" id="starterPrice">3.600 MT</p>
+        <ul>
+          <li>&#10003; Integração de gateway de pagmentos M-Pesa, PayPal, </li>
+          <li>&#10003; Suporte para sandbox e produção</li>
+          <li>&#10003; Testes e validação</li>
+          <li>&#10003; Suporte técnico por 7 dias</li>
+          <li>&#10003; Prazo: 3 a 7 dias úteis</li>
+        </ul>
+        <button class="buy-btn" onclick="toggleContactForm('Sky-Starter')">Solicitar Sky-Starter</button>
+
+      </div>
+
+      <div class="package-card">
+        <h2>Sky-Basic</h2>
+        <p class="price" id="basicPrice">7.500 MT/ano</p>
         <ul>
           <li>&#10003; Site de 1 a 3 páginas</li>
           <li>&#10003; Design Responsivo</li>
@@ -59,8 +75,7 @@
           <li>&#10003; Formulário de contato</li>
           <li>&#10003; Entrega em até 5 dias úteis</li>
         </ul>
-        <button class="buy-btn" onclick="toggleContactForm('Sky-Starter')">Solicitar Sky-Starter</button>
-
+        <button class="buy-btn" onclick="toggleContactForm('Sky-Starter')">Solicitar Sky-Basic</button>
       </div>
 
       <div class="package-card">
@@ -79,8 +94,10 @@
         <br>
         <button class="buy-btn" onclick="toggleContactForm('Sky-Business')">Solicitar Sky-Business</button>
       </div>
-
-      <div class="package-card">
+    </div>
+    <br>
+    <div class="packages"> <!-- Reptição de ABA Packege -->
+      <div class="package-card" id="premiumPackge">
         <h2>Sky-Premium</h2>
         <p class="price" id="premiumPrice">33.000 MT/ano</p>
         <ul>
@@ -88,7 +105,9 @@
           <li>&#10003; Design estratégico e exclusivo</li>
           <li>&#10003; Hospedagem incluída</li>
           <li>&#10003; 5 contas de e-mail corporativo</li>
-          <li>&#10003; Integrações avançadas (API, M-Pesa, etc.)</li>
+          <li>&#10003; Integrações avançadas (API, M-Pesa,)</li>
+          <li>&#10003; Integrações avançadas (API, E-mola,)</li>
+          <li>&#10003; Integrações avançadas (API, paypal,)</li>
           <li>&#10003; Suporte completo e relatórios mensais</li>
           <li>&#10003; Entrega entre 30 a 45 dias úteis</li>
           <li>&#10003; Pagamento em até 3 etapas</li>
@@ -98,13 +117,14 @@
       </div>
     </div>
 
+
     <button class="back-btn" onclick="history.back()">&larr; Voltar</button>
   </div>
 
   <script>
     function togglePricing() {
       const isMonthly = document.getElementById("paymentToggle").checked;
-      document.getElementById("starterPrice").innerText = isMonthly ? "625 MT/mês" : "7.500 MT/ano";
+      document.getElementById("basicPrice").innerText = isMonthly ? "625 MT/mês" : "7.500 MT/ano";
       document.getElementById("businessPrice").innerText = isMonthly ? "1.250 MT/mês" : "15.000 MT/ano";
       document.getElementById("premiumPrice").innerText = isMonthly ? "2.750 MT/mês" : "33.000 MT/ano";
       document.getElementById("paymentLabel").innerText = isMonthly ? "Mensal" : "Anual";

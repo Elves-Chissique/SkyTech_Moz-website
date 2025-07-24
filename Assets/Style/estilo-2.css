@@ -387,7 +387,8 @@ body{
     color:#87ac03;
     margin-top: 2.5em;
     margin-bottom: 1em;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    text-align: center;
 }
 
 .servicos > div > .span-text{
@@ -395,7 +396,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .servicos .main-btn{
