@@ -721,19 +721,26 @@ body{
     text-align: center;
 }
 
+#suporteTecnico{
+    padding: .6em;
+}
+
 
 .our-values > article > h1 > span > img{
     width: 70px;
 }
 
 .our-values > .article-values > p{
+    display: block;
     top: 1em;
-    padding: 1em;
+    padding: 0 2em;
     color:rgb(185, 87, 87);
     font-size: 1em;
     text-align: justify;
     letter-spacing: .15em;
 }
+
+
 
 .our-values > article .caixa{
     width: 33%;
