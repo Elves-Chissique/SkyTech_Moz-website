@@ -772,13 +772,33 @@ body{
     transition: 1s;
 }
 
+.our-values > article .caixa >div > h1{
+    visibility: hidden;
+    position: absolute;
+    font-size: 1.1em;
+    text-align: center;
+    top: 6em;
+    right: 1.5em;
+    color: #8a8787f8;
+    transition: .2s;
+}
+
+.our-values > article .caixa:hover h1{
+    visibility: visible;
+    position: absolute;
+    text-align: center;
+    right: 1.5em;
+    color: #fff;
+    cursor: default;
+}
+
 .our-values > article .caixa:hover h2{
     position: absolute;
     font-size: .9em;
     text-align: center;
     top: 2em;
     right: 1.5em;
-    color: #fff;
+    color: #ffffffcc;
     cursor: default;
 }
 
@@ -990,9 +1010,12 @@ body{
 }
 
 
-.bodyII > .inicial-picture{
+.bodyII > article >  .inicial-picture{
     min-height: 100vh;
+    top: 0;
+    left: 0;
     display: flex;
+    position: absolute;
     gap:2em;
     justify-content: center;
     align-items: center;
@@ -1000,7 +1023,7 @@ body{
     background-color: #000000ce;
 }
 
-.bodyII > .inicial-picture > .pict{
+.bodyII > article > .inicial-picture > .pict{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1028,18 +1051,18 @@ body{
     height: 3px;
 }
 
-.bodyII > .inicial-picture > .pict > img{
+.bodyII > article > .inicial-picture > .pict > img{
   width: 100%;
   transition:.6s;
 }
 
-.bodyII > .inicial-picture > .pict > img:hover{
-    transform: scale(1.03);
+.bodyII > article > .inicial-picture > .pict > img:hover{
+    transform: scale(1.04);
 }
 
 .video-bg {
     margin-top: 20vh;
-    position: fixed;
+    position: absolute;
     top: auto;
     left: 0;
     width: 100%;
@@ -1048,15 +1071,10 @@ body{
     z-index: -1; /* Coloca o vídeo atrás de outros elementos */
 }
 
-.bodyII .slogan{
-    position: absolute;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.bodyII .slogan img{
-   width: 70%;
+.bodyII > div.contant{
+    margin-top: 103vh;
+    background: linear-gradient(to right, #017247, #67689c);
+    padding: 0;
 }
 
 
