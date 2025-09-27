@@ -710,15 +710,28 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.our-values > article > h1{
+    color:brown;
+    padding-right: .5em;
+    border-right: .2em solid ;
+    text-align: center;
+}
+
+
+.our-values > article > h1 > span > img{
+    width: 70px;
 }
 
 .our-values > .article-values > p{
-    background-color: #001e29;
     top: 1em;
     padding: 1em;
     color: #fff;
     font-size: 1em;
-    text-align: center;
+    text-align: justify;
     letter-spacing: .15em;
 }
 
@@ -746,7 +759,7 @@ body{
 .our-values > article .caixa p{
     padding: 1em;
     color:#fff;
-    text-align: center;
+    text-align: justify;
     font-size: .0em;
     font-family: cursive;
     letter-spacing: .2em;
