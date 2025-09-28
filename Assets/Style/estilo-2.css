@@ -697,13 +697,15 @@ body{
 
 /* Configuração da ABA our values*/
 .first-our-values, .outras-values{
-
+    margin-top: 5em;
     height: 26vw;
 }
 .our-values{
     position: relative;
     padding:2em;
     background-color: #001e29;
+    margin-bottom: 12em;
+    margin-top: 6em;
 }
 
 .our-values > article{
@@ -722,7 +724,7 @@ body{
 }
 
 #suporteTecnico{
-    padding: .6em;
+    padding: 0 .6em;
 }
 
 
@@ -731,7 +733,6 @@ body{
 }
 
 .our-values > .article-values > p{
-    display: block;
     top: 1em;
     padding: 0 2em;
     color:rgb(185, 87, 87);
@@ -742,24 +743,25 @@ body{
 
 
 
-.our-values > article .caixa{
-    width: 33%;
-    background-color: #8f8989;
-    color: #b8b1b1;
-    border-radius: 1.4em;
-    transition: .5s;
-    cursor: default;
-    height: 40vh;
+.our-values > article {
+    display: flex;
+    align-items: flex-start; /* fixa o topo das caixas */
 }
 
-.our-values > article .caixa:hover{
+.our-values > article .caixa {
     width: 33%;
     background-color: #8f8989;
     color: #b8b1b1;
     border-radius: 1.4em;
-    transition: .4s;
+    transition: height .4s ease;
     cursor: default;
-    height: 57vh;
+    height: 40vh;
+    box-sizing: border-box;
+    overflow: hidden; /* evita "saltar" conteúdo */
+}
+
+.our-values > article .caixa:hover {
+    height: 57vh; /* aumenta apenas para baixo */
 }
 
 
@@ -1092,7 +1094,7 @@ body{
 }
 
 .bodyII > div.contant{
-    margin-top: 103vh;
+    margin-top: 100vh;
     background: linear-gradient(to right, #017247, #67689c);
     padding: 0;
 }
